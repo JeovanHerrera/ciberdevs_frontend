@@ -4,4 +4,4 @@ Edad:   33 años
 Mi Película Favorita: Minority Report
 Mi Libro Favorito: The Richest Man In Babylon
 Profesión: Ingeniero Electrónico
-Nueva Profesión: Desarrollo de sofware
+Nueva Profesión: Desarrollo de software
