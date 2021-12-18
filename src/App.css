@@ -9,9 +9,8 @@
 
 .home,
 .users, 
-.projects,
-.subscriptions, 
-.progress {
+.projects
+{
   display: flex;
   height: 90vh;
   align-items: center;
