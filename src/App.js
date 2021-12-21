@@ -12,11 +12,12 @@ import Projects from "./pages/Projects";
 import Users from "./pages/Users";
 import Subscriptions from "./pages/Subscriptions";
 import Progress from "./pages/Progress";
-import Progress_Edit from "./pages/Progress_Edit"
+import Progress_Create from "./pages/Progress_Create"
+import Subscriptions_Create from "./pages/Subscriptions_Create"
 
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: 'https://backend-admin-project.herokuapp.com/graphql',
   cache: new InMemoryCache()
 });
 
@@ -28,12 +29,15 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/home" exact component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/users" component={Users} />
           <Route path="/Projects" component={Projects} />
-          <Route path="/Subscriptions" component={Subscriptions} />
+          <Route path="/Subscriptions" exact component={Subscriptions} />
+          <Route path="/Subscriptions/Create/" component={Subscriptions_Create} />
           <Route path="/Progress" exact component={Progress} />
-          <Route path="/Progress/:id" component={Progress_Edit} />
+          <Route path="/Progress/Create/:id" component={Progress_Create} />
+          <Route path="/Progress/Create/" component={Progress_Create} />
+          
         </Switch>
       </Router>
     </>

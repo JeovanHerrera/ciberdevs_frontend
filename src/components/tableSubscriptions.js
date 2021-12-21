@@ -4,6 +4,7 @@ import {useQuery,
   } from "@apollo/client";
 import { GET_SUBSCRIPTIONS } from "../graphql/suscriptions/queriesSuscriptions";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const TableSubs = () => {
 
@@ -41,7 +42,9 @@ const TableSubs = () => {
                 <td>{s.date_in_subs}</td>
                 <td>{s.date_out_subs}</td>
                 <td>
+                    <Link to={`/Subscriptions/Create/${s._id}`}>
                     <Button id={s._id} variant="primary">Editar</Button>
+                    </Link>
                 </td>
               </tr>
             );

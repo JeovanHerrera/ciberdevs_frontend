@@ -3,8 +3,9 @@ import TableProgress from '../components/tableProgress';
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 
   
 
@@ -22,9 +23,23 @@ function Progress() {
       </Form.Group>
       </Row>
       </Container>
+
       <TableProgress>
-        
       </TableProgress>
+     <Container className="d-flex justify-content-center" >
+     
+     <Link  to={"/Progress/Create"}>
+      <Button
+        variant="primary"
+        type="button"
+        className="center"
+        
+      >
+        Agregar
+      </Button>
+      </Link>
+      
+      </Container>
     </div>
   );
 }

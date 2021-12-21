@@ -20,7 +20,7 @@ import {
 import { useEffect, useState } from "react";
 import { GET_PROGRESS } from "../graphql/progress/queriesProgress";
 
-const FormProgress = () => {
+const FormProject = () => {
   let { id } = useParams();
   const {
     loading: queryLoading,
@@ -171,4 +171,4 @@ const FormProgress = () => {
   );
 };
 
-export default FormProgress;
+export default FormProject;

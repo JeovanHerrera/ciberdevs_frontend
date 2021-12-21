@@ -38,7 +38,7 @@ const TableProgress = () => {
                 <td>{s.description_develop}</td>
                 <td>{s.comment_boss}</td>
                 <td>
-                    <Link to={`/Progress/${s._id}`}>
+                    <Link to={`/Progress/create/${s._id}`}>
                     <Button id={s._id} variant="primary">Editar</Button>
                     </Link>
                 </td>

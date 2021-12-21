@@ -6,37 +6,37 @@ import * as GiIcons from 'react-icons/gi';
 
 export const SidebarData = [
   {
-    title: 'Home',
-    path: '/home',
+    title: 'Inicio',
+    path: '/',
     icon: <AiIcons.AiFillHome />,
     cName: 'nav-text'
   },
   {
-    title: 'Projects',
+    title: 'Proyectos',
     path: '/projects',
     icon: <AiIcons.AiFillFolderAdd />,
     cName: 'nav-text'
   },
   {
-    title: 'Users',
+    title: 'Usuarios',
     path: '/users',
     icon: <AiIcons.AiOutlineUser />,
     cName: 'nav-text'
   },
   {
-    title: 'Subscriptions',
+    title: 'Inscripciones',
     path: '/subscriptions',
     icon: <AiIcons.AiFillFileAdd />,
     cName: 'nav-text'
   },
   {
-    title: 'Progress',
+    title: 'Avances',
     path: '/Progress',
     icon: <GiIcons.GiSandsOfTime />,
     cName: 'nav-text'
   },
   {
-    title: 'Support',
+    title: 'Ayuda',
     path: '/support',
     icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text'
